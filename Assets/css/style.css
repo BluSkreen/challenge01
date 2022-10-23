@@ -11,7 +11,7 @@ body {
 header {
     /* allow header to use flex boxes */
     display: flex;
-    /* Put space between the header and navigation (Header on left, navigation on right) */
+    /* Put space between the title and navigation (title on left, navigation on right) */
     justify-content: space-between;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -23,10 +23,12 @@ h1 {
     font-size: 48px;
 }
 
+/* color in the title */
 .seo {
     color: #d9dcd6;
 }
 
+/* format nav bar */
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -37,12 +39,13 @@ nav {
 nav ul {
     list-style-type: none;
 }
-
+/* navigation tabs are inline */
 nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* format text elements */
 a {
     color: #ffffff;
     text-decoration: none;
@@ -63,16 +66,14 @@ h3 {
     text-align: center;
 }
 
+/* space content and benefits evenly */
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-/* section {
-    display: flex;
-} */
-
+/* articles will use flex bloxes to fit content */
 article {
     display: flex;
     justify-content: space-evenly;
@@ -83,6 +84,7 @@ article {
     color: #ffffff;
 }
 
+/* format text in article */
 article div {
     display: flex;
     flex-flow: column wrap;
@@ -103,6 +105,7 @@ article div {
     background-position: center;
 }
 
+/* content will stack articls on the left side */
 .content {
     display: flex;
     justify-content:space-between;
@@ -116,7 +119,7 @@ article div {
     max-height: 200px;
 }
 
-
+/* benefits will stack additional info and images on the right side */
 .benefits {
     display: flex;
     flex-direction: column;
@@ -132,25 +135,8 @@ article div {
     align-self: center;
 }
 
-.benefit-lead {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    clear: both;
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    clear: both;
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
+/* format aside info */
+.benefit-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
